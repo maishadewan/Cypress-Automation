@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-01-27T08:56:26.115Z",
+    "end": "2022-01-27T08:56:45.584Z",
+    "duration": 19469,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "81f2f857-ef3f-4f0f-8c67-eba4f134c3cc",
+      "title": "",
+      "fullFile": "cypress/integration/login.js",
+      "file": "cypress/integration/login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d5aeb11a-0f90-4d0f-b0a2-d3ba7980be8d",
+          "title": "glassdoor testcases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "signin",
+              "fullTitle": "glassdoor testcases signin",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "6d15715a-f876-469f-a224-c8eb15b16871",
+              "parentUUID": "d5aeb11a-0f90-4d0f-b0a2-d3ba7980be8d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login",
+              "fullTitle": "glassdoor testcases login",
+              "timedOut": null,
+              "duration": 7058,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.navigate('https://www.glassdoor.com/');\nloginPage.findSignin();\nloginPage.signinEmail('rgf@ghg.com');\nloginPage.signinPassword('hahahafghrt');\nloginPage.signinClick(); // cy.get('a[class=\"LockedHomeHeaderStyles__mainMenuItem\"]').click()\n// cy.get('span[class=\"footer-gd-redirect-text\"]').click()",
+              "err": {},
+              "uuid": "f0069add-393b-47f0-ac80-b948a87c24dd",
+              "parentUUID": "d5aeb11a-0f90-4d0f-b0a2-d3ba7980be8d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "searches stuff in searchbox and enters",
+              "fullTitle": "glassdoor testcases searches stuff in searchbox and enters",
+              "timedOut": null,
+              "duration": 9977,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.searchTypeEnter('QA{enter}');\ncy.wait(5000); //cy.get('a[aria-label=\"Glassdoor Logo\"]').click()\n//loginPage.findHome()\nloginPage.navigate('https://www.glassdoor.com/member/home/index.htm');",
+              "err": {},
+              "uuid": "2935f21a-885b-47e9-9b57-b09f2ddecd71",
+              "parentUUID": "d5aeb11a-0f90-4d0f-b0a2-d3ba7980be8d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Updating personal info",
+              "fullTitle": "glassdoor testcases Updating personal info",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "8f045c11-da3f-4619-9744-475587762825",
+              "parentUUID": "d5aeb11a-0f90-4d0f-b0a2-d3ba7980be8d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f0069add-393b-47f0-ac80-b948a87c24dd",
+            "2935f21a-885b-47e9-9b57-b09f2ddecd71"
+          ],
+          "failures": [],
+          "pending": [
+            "6d15715a-f876-469f-a224-c8eb15b16871",
+            "8f045c11-da3f-4619-9744-475587762825"
+          ],
+          "skipped": [],
+          "duration": 17035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "html": true,
+        "json": true,
+        "reportPageTitle": "Glassdoor Report",
+        "embeddedScreenshots": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
